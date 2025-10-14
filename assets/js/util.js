@@ -86,7 +86,11 @@
 				// Side of viewport the panel will appear.
 					side: null,
 
-				// Target element for "class".
+				/**
+				 * Target element for "class".
+				 * Use a jQuery object, DOM element, or a CSS selector string.
+				 * Do NOT supply HTML strings; untrusted input may cause XSS.
+				 */
 					target: $this,
 
 				// Class to toggle.
@@ -95,9 +99,21 @@
 			}, userConfig);
 
 			// Expand "target" if it's not a jQuery object already.
-				if (typeof config.target != 'jQuery')
-					config.target = $(config.target);
-
+				// Avoid unsafe interpretation of HTML in 'target' string.
+				// If 'target' is a string that starts with '<', jQuery would treat it as HTML, leading to XSS.
+				// Always interpret 'target' as a selector, or require it to be a jQuery object/DOM element.
+				if (!(config.target instanceof jQuery)) {
+					if (typeof config.target === 'string') {
+						// Warn if 'target' looks like HTML tag.
+						if (config.target.trim().charAt(0) === '<') {
+							throw new Error("Unsafe 'target' option: HTML is not allowed for plugin target.");
+						}
+						// Safe: wrap as selector.
+						config.target = $(config.target);
+					} else {
+						config.target = $(config.target);
+					}
+				}
 		// Panel.
 
 			// Methods.
