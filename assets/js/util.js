@@ -88,8 +88,9 @@
 
 				/**
 				 * Target element for "class".
-				 * Use a jQuery object, DOM element, or a CSS selector string.
-				 * Do NOT supply HTML strings; untrusted input may cause XSS.
+				 * Accepts a jQuery object, DOM element, or a CSS selector string.
+				 * HTML strings are NOT allowed and will cause an error.
+				 * (Supplying user input as the target is dangerous; XSS protection is enforced.)
 				 */
 					target: $this,
 
@@ -104,11 +105,12 @@
 				// Always interpret 'target' as a selector, or require it to be a jQuery object/DOM element.
 				if (!(config.target instanceof jQuery)) {
 					if (typeof config.target === 'string') {
-						// Warn if 'target' looks like HTML tag.
-						if (config.target.trim().charAt(0) === '<') {
-							throw new Error("Unsafe 'target' option: HTML is not allowed for plugin target.");
+						// Forbid HTML string as target: trim and check if first character is '<'
+						var trimmedTarget = config.target.trim();
+						if (trimmedTarget.length > 0 && trimmedTarget[0] === '<') {
+							throw new Error("Unsafe 'target' option: HTML is not allowed for plugin target. Only a CSS selector, jQuery object, or DOM node are permitted.");
 						}
-						// Safe: wrap as selector.
+						// Safe: wrap as selector (never as HTML)
 						config.target = $(config.target);
 					} else {
 						config.target = $(config.target);
