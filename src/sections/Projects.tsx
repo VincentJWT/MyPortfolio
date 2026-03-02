@@ -140,6 +140,7 @@ export function Projects() {
             </div>
           ))}
         </div>
+      </div>
 
       {/* Project Modal */}
       <Dialog open={!!selectedProject} onOpenChange={() => setSelectedProject(null)}>
