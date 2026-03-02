@@ -18,12 +18,12 @@ export const projects: Project[] = [
     category: 'Residential',
     description: '4-unit townhouse complex arranged around a central courtyard, meeting density requirements while preserving existing trees.',
     // Main image - can be changed to any image file in /images folder
-    image: '/images/0e4d800eea0c857eb448534cfdd547f7.png',
+    image: '/images/Enscape_2026-02-23-20-59-16.jpg',
     // Gallery images - add or remove as needed
     images: [
-      '/images/0e4d800eea0c857eb448534cfdd547f7.png',
-      '/images/FloorPlan.jpg',
-      '/images/FloorPlanSEC.jpg',
+      '/images/Enscape_2024-03-19-14-04-41.jpg',
+      '/images/Wentian Jiang-Final AssignmentFloor Plan_Page_4.jpg',
+      '/images/Wentian Jiang-Final AssignmentFloor Plan_Page_5.jpg',
     ],
     details: [
       'Revit site modeling and sunlight analysis',
@@ -38,8 +38,8 @@ export const projects: Project[] = [
     description: 'Complete design process from concept to construction documents, simulating real-world workflow from design development to construction phase.',
     image: '/images/Enscape_2025-02-12-23-48-15.jpg',
     images: [
-      '/images/Enscape_2025-02-12-23-48-15.jpg',
-      '/images/Wentian Jiang-2 STOREY _Page_2.png',
+      '/images/Version 4.0 - ARCT2441 - Building Permit_Page_3.png',
+      '/images/ersion 3.5 - ARCT2441 - Building Permit_Page_1.png',
     ],
     details: [
       'Setback and city bylaw compliance',

@@ -141,15 +141,6 @@ export function Projects() {
           ))}
         </div>
 
-        {/* Edit Note */}
-        <div className="mt-12 text-center animate-on-scroll">
-          <p className="text-sm text-muted-foreground">
-            To modify project images, edit{' '}
-            <code className="bg-secondary dark:bg-secondary/50 px-2 py-1 rounded text-xs">src/data/projects.ts</code>
-          </p>
-        </div>
-      </div>
-
       {/* Project Modal */}
       <Dialog open={!!selectedProject} onOpenChange={() => setSelectedProject(null)}>
         <DialogContent className="max-w-5xl max-h-[90vh] overflow-y-auto p-0 bg-card">
