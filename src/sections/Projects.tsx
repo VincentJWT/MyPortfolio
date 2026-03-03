@@ -1,5 +1,4 @@
-/// <reference types="react" />
-import React, { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { ChevronLeft, ChevronRight, ExternalLink } from 'lucide-react';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
@@ -141,6 +140,14 @@ export function Projects() {
             </div>
           ))}
         </div>
+
+        {/* Edit Note */}
+        <div className="mt-12 text-center animate-on-scroll">
+          <p className="text-sm text-muted-foreground">
+            To modify project images, edit{' '}
+            <code className="bg-secondary dark:bg-secondary/50 px-2 py-1 rounded text-xs">src/data/projects.ts</code>
+          </p>
+        </div>
       </div>
 
       {/* Project Modal */}
@@ -178,7 +185,7 @@ export function Projects() {
                     
                     {/* Image indicators */}
                     <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
-                      {selectedProject.images.map((_: string, index: number) => (
+                      {selectedProject.images.map((_, index) => (
                         <button
                           key={index}
                           className={`w-2 h-2 rounded-full transition-colors ${
@@ -213,7 +220,7 @@ export function Projects() {
                   <div>
                     <h4 className="font-semibold text-foreground mb-2">Key Highlights</h4>
                     <ul className="space-y-1">
-                      {selectedProject.details.map((detail: string, index: number) => (
+                      {selectedProject.details.map((detail, index) => (
                         <li key={index} className="flex gap-2 text-sm text-muted-foreground">
                           <span className="text-blue-600 dark:text-blue-500 mt-0.5">•</span>
                           {detail}
