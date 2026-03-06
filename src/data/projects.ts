@@ -18,12 +18,12 @@ export const projects: Project[] = [
     category: 'Residential',
     description: '4-unit townhouse complex arranged around a central courtyard, meeting density requirements while preserving existing trees.',
     // Main image - can be changed to any image file in /images folder
-    image: '/images/0e4d800eea0c857eb448534cfdd547f7.png',
+    image: '/images/01-1.jpg',
     // Gallery images - add or remove as needed
     images: [
-      '/images/0e4d800eea0c857eb448534cfdd547f7.png',
-      '/images/FloorPlan.jpg',
-      '/images/FloorPlanSEC.jpg',
+      '/images/01-2.jpg',
+      '/images/01-3.jpg',
+      '/images/01-4.jpg',
     ],
     details: [
       'Revit site modeling and sunlight analysis',
