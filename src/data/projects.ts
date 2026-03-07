@@ -21,9 +21,13 @@ export const projects: Project[] = [
     image: '/images/01-1.jpg',
     // Gallery images - add or remove as needed
     images: [
-      '/images/01-2.jpg',
+      '/images/01-2.png',
       '/images/01-3.jpg',
       '/images/01-4.jpg',
+      '/images/01-5.jpg',
+      '/images/01-6.jpg',
+      '/images/01-7.jpg',
+
     ],
     details: [
       'Revit site modeling and sunlight analysis',
@@ -65,6 +69,7 @@ export const projects: Project[] = [
       '/images/03-4.jpg',
       '/images/03-5.jpg',
       '/images/03-6.jpg',
+      '/images/03-7.jpg',
     ],
     details: [
       'Functional interior spaces with sleek exterior',
@@ -155,11 +160,13 @@ export const projects: Project[] = [
     images: [
       '/images/07-2.png',
       '/images/07-3.png',
-      '/images/07-4.jpg',
-      '/images/07-5.png',
+      '/images/07-4.png',
+      '/images/07-5.jpg',
       '/images/07-6.jpg',
-      '/images/07-7.jpg',
-      '/images/07-8.png',
+      '/images/07-7.png',
+      '/images/07-8.jpg',
+      '/images/07-9.jpg',
+      '/images/07-10.png',
     ],
     details: [
       'Wall connection detailing',
@@ -184,6 +191,7 @@ export const projects: Project[] = [
       '/images/08-8.jpg',
       '/images/08-9.png',
       '/images/08-10.jpg',
+      '/images/08-11.png',
     ],
     details: [
       'Residential setting visualization',
@@ -192,6 +200,65 @@ export const projects: Project[] = [
       'Client presentation materials',
     ],
   },
+ {
+  id: 9,
+  title: 'Drone Site Survey',
+  category: 'Site Documentation',
+  description: 'Aerial drone survey used to document site conditions and surrounding context for residential planning and design analysis.',
+  image: '/images/09-1.jpg',
+  images: [
+    '/images/09-2.jpg',
+    '/images/09-3.jpg',
+    '/images/09-4.jpg',
+    '/images/09-5.jpg',
+  ],
+  details: [
+    'Drone aerial photography and site documentation',
+    'Site context analysis and surrounding conditions study',
+    'High-resolution image capture for design reference',
+    'Visual documentation supporting architectural planning',
+  ],
+},
+
+{
+  id: 10,
+  title: 'Existing Building Site Measurement',
+  category: 'Site Survey',
+  description: 'Accurate on-site measurement of an existing residential building to produce reliable as-built drawings and digital models.',
+  image: '/images/10-1.jpg',
+  images: [
+    '/images/10-2.jpg',
+    '/images/10-3.jpg',
+    '/images/10-4.jpg',
+    '/images/10-5.jpg',
+  ],
+  details: [
+    'Field measurement of building dimensions and layout',
+    'Documentation of openings, wall thickness, and structural elements',
+    'Development of accurate as-built drawings',
+    'Preparation of digital drafting files for modeling',
+  ],
+},
+
+{
+  id: 11,
+  title: 'Two-Storey Residential House',
+  category: 'Residential',
+  description: 'Two-storey residential house design focusing on functional layout, building envelope detailing, and BIM-based documentation.',
+  image: '/images/11-1.jpg',
+  images: [
+    '/images/11-2.jpg',
+    '/images/11-3.jpg',
+    '/images/11-4.jpg',
+    '/images/11-5.jpg',
+  ],
+  details: [
+    'Development of architectural floor plans and elevations',
+    'BIM modeling using Revit',
+    'Building section and wall assembly detailing',
+    'Residential design and construction documentation',
+  ],
+},
 ];
 
 // Helper function to get project by ID
