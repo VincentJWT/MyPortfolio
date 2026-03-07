@@ -103,7 +103,7 @@ export const projects: Project[] = [
     images: [
       '/images/05-2.jpg',
       '/images/05-3.jpg',
-      '/images/05-4.jpg',
+      '/images/05-4.png',
       '/images/05-5.jpg',
       '/images/05-6.jpg',
       '/images/05-7.jpg',
@@ -153,13 +153,13 @@ export const projects: Project[] = [
     description: 'Focus on mastering wall connections, roof details, and building sections using AutoCAD and Revit.',
     image: '/images/07-1.jpg',
     images: [
-      '/images/07-2.jpg',
+      '/images/07-2.png',
       '/images/07-3.jpg',
       '/images/07-4.jpg',
-      '/images/07-5.jpg',
+      '/images/07-5.png',
       '/images/07-6.jpg',
       '/images/07-7.jpg',
-      '/images/07-8.jpg',
+      '/images/07-8.png',
     ],
     details: [
       'Wall connection detailing',
@@ -182,7 +182,7 @@ export const projects: Project[] = [
       '/images/08-6.jpg',
       '/images/08-7.jpg',
       '/images/08-8.jpg',
-      '/images/08-9.jpg',
+      '/images/08-9.png',
       '/images/08-10.jpg',
     ],
     details: [
