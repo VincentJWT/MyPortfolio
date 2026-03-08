@@ -245,12 +245,12 @@ export const projects: Project[] = [
   title: 'Two-Storey Residential House',
   category: 'Residential',
   description: 'Two-storey residential house design focusing on functional layout, building envelope detailing, and BIM-based documentation.',
-  image: '/images/11-1.jpg',
+  image: '/images/11-1.png',
   images: [
-    '/images/11-2.jpg',
-    '/images/11-3.jpg',
-    '/images/11-4.jpg',
-    '/images/11-5.jpg',
+    '/images/11-2.png',
+    '/images/11-3.png',
+    '/images/11-4.png',
+    '/images/11-5.png',
   ],
   details: [
     'Development of architectural floor plans and elevations',
