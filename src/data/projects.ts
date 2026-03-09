@@ -207,8 +207,8 @@ export const projects: Project[] = [
   description: 'Aerial drone survey used to document site conditions and surrounding context for residential planning and design analysis.',
   image: '/images/09-1.jpg',
   images: [
-    '/images/09-2.jpg',
-    '/images/09-3.jpg',
+    '/images/09-2.JPG',
+    '/images/09-3.JPG',
     '/images/09-4.png',
   ],
   details: [
@@ -226,11 +226,11 @@ export const projects: Project[] = [
   description: 'Accurate on-site measurement of an existing residential building to produce reliable as-built drawings and digital models.',
   image: '/images/10-1.png',
   images: [
-    '/images/10-2.jpg',
+    '/images/10-2.JPG',
     '/images/10-3.png',
     '/images/10-4.jpg',
     '/images/10-5.jpg',
-    '/images/10-5.jpg',
+    '/images/10-6.jpg',
   ],
   details: [
     'Field measurement of building dimensions and layout',
