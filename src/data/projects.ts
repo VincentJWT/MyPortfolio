@@ -209,8 +209,7 @@ export const projects: Project[] = [
   images: [
     '/images/09-2.jpg',
     '/images/09-3.jpg',
-    '/images/09-4.jpg',
-    '/images/09-5.jpg',
+    '/images/09-4.png',
   ],
   details: [
     'Drone aerial photography and site documentation',
@@ -225,11 +224,12 @@ export const projects: Project[] = [
   title: 'Existing Building Site Measurement',
   category: 'Site Survey',
   description: 'Accurate on-site measurement of an existing residential building to produce reliable as-built drawings and digital models.',
-  image: '/images/10-1.jpg',
+  image: '/images/10-1.png',
   images: [
     '/images/10-2.jpg',
-    '/images/10-3.jpg',
+    '/images/10-3.png',
     '/images/10-4.jpg',
+    '/images/10-5.jpg',
     '/images/10-5.jpg',
   ],
   details: [
